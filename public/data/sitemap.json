@@ -1,0 +1,33 @@
+{
+    "siteKey":"",
+    "name":"",
+    "description":"",
+    "pages":[
+        {
+            "hash":"",
+            "control":"",
+            "view":"",
+            "children":[{
+                "hash":"",
+                "control":"",
+                "view":"",
+                "parentHash":""
+            }]
+        },{
+            "hash":"",
+            "control":"",
+            "view":""
+        },{
+            "hash":"",
+            "control":"",
+            "view":""
+        },{
+            "hash":"",
+            "control":"",
+            "view":""
+        },{
+            "hash":"",
+            "control":"",
+            "view":""
+        }]
+}
