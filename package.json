@@ -3,7 +3,7 @@
     "version":"0.0.1",
     "private":true,
     "scripts":{
-        "start":"node app.js"
+        "start":"node almin.js"
     },
     "dependencies":{
         "yaml":"",
@@ -11,7 +11,7 @@
         "config":"",
         "hbs":"1.x",
         "less-middleware":"*",
-        "now":"*",
+        "socket.io":"*",
         "moment":"*",
         "oauth":"*",
         "log4js":"*",

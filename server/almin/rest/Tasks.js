@@ -15,9 +15,23 @@
      * @class Tasks
      * @constructor
      */
-    var Tasks = function() {
+    var Tasks = { };
 
-    }
+    Tasks.get = function(req, res) {
+        res.json({});
+    };
 
-    window.Tasks = Tasks;
+    Tasks.save = function(req, res) {
+        res.send(200);
+    };
+
+    Tasks.query = function(req, res) {
+        res.json([]);
+    };
+
+    Tasks.remove = function(req, res) {
+        res.send(200);
+    };
+
+    module.exports = Tasks;
 }());
