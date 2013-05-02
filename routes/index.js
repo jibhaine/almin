@@ -4,17 +4,10 @@
  */
 
 exports.index = function(req, res){
-    res.render('index', { title: 'Express' });
+  res.render('index');
 };
-/*
- * GET login/register page.
- */
-exports.login = function(req, res){
-    res.render('user/login', { title: 'Express' });
-};
-/*
- * GET user profile page.
- */
-exports.profile = function(req, res){
-    res.render('user/profile', { title: 'Express' });
+
+exports.partial = function (req, res) {
+  var name = req.params.name;
+  res.render('partials/' + name);
 };

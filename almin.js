@@ -4,7 +4,8 @@
  */
 
 var express = require('express')
-  , routes = require('./routes')
+    , routes = require('./routes')
+    , api = require('./routes/api')
   , Sequelize = require("sequelize")
   , http = require('http')
   , path = require('path'),
@@ -69,8 +70,8 @@ app.configure('production', function() {
 // Routes
 
 app.get('/', routes.index);
-app.get('/login', routes.login);
-app.get('/profile', routes.profile);
+app.get('/partial/:name', routes.partial);
+app.get('/api/name', api.name);
 
 
 http.createServer(app).listen(app.get('port'), function(){
