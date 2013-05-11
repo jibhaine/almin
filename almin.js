@@ -4,8 +4,9 @@
  */
 
 var express = require('express')
-    , routes = require('./routes')
-    , api = require('./routes/api')
+    , routes = require('./server/routes')
+    , models = require('./server/models')
+    , api = require('./server/routes/api')
   , Sequelize = require("sequelize")
   , http = require('http')
   , path = require('path'),
@@ -39,7 +40,7 @@ allowCrossDomain = function(req, res, next) {
 
 // all environments
 app.configure(function() {
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3001);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use(express.favicon());
