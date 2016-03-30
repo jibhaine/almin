@@ -4,11 +4,6 @@ jibhaine/almin
 stands for Application Lifecycle Management Interface
 It is mainly an entry portal / index page / service proxy to centralize several team development tools and informations
 
-it also holds the code for several tools i wanted to create.
-* almin :
-* engin : a node-based cms / wiki / comment
-* dash : a timeline for project infos.
-*
 
 # ALMIN
 
@@ -18,53 +13,18 @@ The goal is to provides a main dashboard for evceryone to access their workspace
 The application in itselfs does'nt hold any data besides user preferences and data sources.
 Core app services should be extensible to include data from any source
 
+## Supported Tools
 
-## Supported Backend
-
-In the immediate future, here are the few supported third party applications :
-
-
-### User authentification
-
-* LDAP
-* OAuth
-
-### Source file control
-
-* SVN
-* GIT
-
-### Continuous Integration
-
-* Jenkins
-
-### Code Quality
-
-* Sonar
-
-### Issue Tracker
-
-* Mantis
-* Redmine
-
-
-## Installation
-
-Dependencies are installed with (composer)[http://getcomposer.org/]
-Any php ide should do the trick.
-
-### How to build
-
-  composer install --dev
-
-### How to run tests
-
-  see with your favorite ide.
-
-### How to run site
-
-use php 5.4 embedded web server : php -s
-
+### Source Control Management
+### Continuous integration
+* [Jenkins](https://wiki.jenkins-ci.org/display/JENKINS/Remote+access+API)
+* [Travis](https://docs.travis-ci.com/api)
+### Issues
+* [Redmine](http://www.redmine.org/projects/redmine/wiki/Rest_api)
+* [TFS](https://www.visualstudio.com/en-us/integrate/api/overview)
+* [JIRA](https://docs.atlassian.com/jira/REST/latest/)
+* [GitHub](https://developer.github.com/v3/)
+* [BitBucket](https://developer.atlassian.com/static/rest/bitbucket-server/4.4.1/bitbucket-rest.html)
 
 ## Plugin howto
 
